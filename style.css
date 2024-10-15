@@ -3,73 +3,42 @@
       padding: 0;
       font-family: 'Poppins', sans-serif;
       box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
       background-color: aquamarine;
-}
-
-.app {
+      height: 100vh; /* Full height to help with vertical centering */
+      display: flex;
+      justify-content: center;
+      align-items: center; /* To center the container both horizontally and vertically */
+  }
+  
+  .app {
       background-color: white;
       width: 90%;
       max-width: 600px;
-      margin: 100px auto 0;
+      margin: 0 auto; /* Remove vertical margin to let flex control it */
       border-radius: 10px;
       padding: 30px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .app {
-        width: 95%;
-        margin: 50px auto 0;
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    .btn, #next-btn {
-        padding: 8px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .app {
-        width: 100%;
-        margin: 30px auto 0;
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 16px;
-    }
-
-    .btn, #next-btn {
-        padding: 6px;
-        font-size: 12px;
-    }
-}
-
-.app h1 {
+  }
+  
+  .app h1 {
       font-weight: 25px;
       color: burlywood;
       border-bottom: 1px solid #5b5a5a;
       padding-bottom: 30px;
-}
-
-.quiz {
+  }
+  
+  .quiz {
       padding: 20px 0;
-}
-
-.quiz h2 {
+  }
+  
+  .quiz h2 {
       font-size: 20px;
       color: rgb(76, 66, 52);
-}
-
-.btn {
+  }
+  
+  .btn {
       background-color: rgb(198, 198, 198);
       color: #313532;
       font-weight: 700;
@@ -80,14 +49,14 @@ body {
       text-align: left;
       border-radius: 4px;
       cursor: pointer;
-}
-
-.btn:hover:not([disabled]) {
+  }
+  
+  .btn:hover:not([disabled]) {
       background-color: #5e5c5c;
       color: #fff;
-}
-
-#next-btn {
+  }
+  
+  #next-btn {
       background-color: rgb(134, 149, 176);
       color: #313532;
       font-weight: 700;
@@ -99,17 +68,51 @@ body {
       border-radius: 4px;
       cursor: pointer;
       display: block;
-}
-
-#next-btn:hover {
+  }
+  
+  #next-btn:hover {
       background-color: rgb(84, 75, 101);
       color: #fff;
-}
-
-.correct {
+  }
+  
+  .correct {
       background-color: rgb(196, 233, 196);
-}
-
-.incorrect {
+  }
+  
+  .incorrect {
       background-color: rgb(238, 202, 202);
-}
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+      .app {
+          width: 80%;
+          padding: 25px;
+      }
+  
+      h1 {
+          font-size: 20px;
+      }
+  
+      .btn, #next-btn {
+          padding: 12px;
+          font-size: 16px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .app {
+          width: 85%;
+          padding: 20px;
+      }
+  
+      h1 {
+          font-size: 18px;
+      }
+  
+      .btn, #next-btn {
+          padding: 10px;
+          font-size: 14px;
+      }
+  }
+  
