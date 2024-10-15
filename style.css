@@ -1,4 +1,4 @@
-*{
+* {
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
@@ -16,6 +16,41 @@ body {
       margin: 100px auto 0;
       border-radius: 10px;
       padding: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .app {
+        width: 95%;
+        margin: 50px auto 0;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .btn, #next-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app {
+        width: 100%;
+        margin: 30px auto 0;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .btn, #next-btn {
+        padding: 6px;
+        font-size: 12px;
+    }
 }
 
 .app h1 {
@@ -63,13 +98,12 @@ body {
       margin: 10px auto 0;
       border-radius: 4px;
       cursor: pointer;
-      display: block; /* to place the button in the center */
+      display: block;
 }
 
 #next-btn:hover {
       background-color: rgb(84, 75, 101);
       color: #fff;
-      
 }
 
 .correct {
