@@ -1,118 +1,117 @@
 * {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      box-sizing: border-box;
-  }
-  
-  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
       background-color: aquamarine;
-      height: 100vh; /* Full height to help with vertical centering */
-      display: flex;
-      justify-content: center;
-      align-items: center; /* To center the container both horizontally and vertically */
-  }
-  
-  .app {
-      background-color: white;
-      width: 90%;
-      max-width: 600px;
-      margin: 0 auto; /* Remove vertical margin to let flex control it */
-      border-radius: 10px;
-      padding: 30px;
-  }
-  
-  .app h1 {
-      font-weight: 25px;
-      color: burlywood;
-      border-bottom: 1px solid #5b5a5a;
-      padding-bottom: 30px;
-  }
-  
-  .quiz {
-      padding: 20px 0;
-  }
-  
-  .quiz h2 {
-      font-size: 20px;
-      color: rgb(76, 66, 52);
-  }
-  
-  .btn {
-      background-color: rgb(198, 198, 198);
-      color: #313532;
-      font-weight: 700;
-      width: 100%;
-      border: 1px solid #adadad;
-      padding: 10px;
-      margin: 10px 0;
-      text-align: left;
-      border-radius: 4px;
-      cursor: pointer;
-  }
-  
-  .btn:hover:not([disabled]) {
-      background-color: #5e5c5c;
-      color: #fff;
-  }
-  
-  #next-btn {
-      background-color: rgb(134, 149, 176);
-      color: #313532;
-      font-weight: 700;
-      width: 100px;
-      text-align: center;
-      border: 1px solid #adadad;
-      padding: 10px;
-      margin: 10px auto 0;
-      border-radius: 4px;
-      cursor: pointer;
-      display: block;
-  }
-  
-  #next-btn:hover {
-      background-color: rgb(84, 75, 101);
-      color: #fff;
-  }
-  
-  .correct {
-      background-color: rgb(196, 233, 196);
-  }
-  
-  .incorrect {
-      background-color: rgb(238, 202, 202);
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-      .app {
-          width: 80%;
-          padding: 25px;
-      }
-  
-      h1 {
-          font-size: 20px;
-      }
-  
-      .btn, #next-btn {
-          padding: 12px;
-          font-size: 16px;
-      }
-  }
-  
-  @media (max-width: 480px) {
-      .app {
-          width: 85%;
-          padding: 20px;
-      }
-  
-      h1 {
-          font-size: 18px;
-      }
-  
-      .btn, #next-btn {
-          padding: 10px;
-          font-size: 14px;
-      }
-  }
-  
+    height: 100vh; /* Full height to help with vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* To center the container both horizontally and vertically */
+}
+
+.app {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto; /* Remove vertical margin to let flex control it */
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1 {
+    font-weight: 25px;
+    color: burlywood;
+    border-bottom: 1px solid #5b5a5a;
+    padding-bottom: 30px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 20px;
+    color: rgb(76, 66, 52);
+}
+
+.btn {
+    background-color: rgb(198, 198, 198);
+    color: #313532;
+    font-weight: 700;
+    width: 100%;
+    border: 1px solid #adadad;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: #5e5c5c;
+    color: #fff;
+}
+
+#next-btn {
+    background-color: rgb(134, 149, 176);
+    color: #313532;
+    font-weight: 700;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #adadad;
+    padding: 10px;
+    margin: 10px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+#next-btn:hover {
+    background-color: rgb(84, 75, 101);
+    color: #fff;
+}
+
+.correct {
+    background-color: rgb(196, 233, 196);
+}
+
+.incorrect {
+    background-color: rgb(238, 202, 202);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .app {
+        width: 80%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn, #next-btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app {
+        width: 85%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .btn, #next-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
